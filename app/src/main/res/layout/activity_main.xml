@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="194dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/temp_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="348dp"
+            android:onClick="getSet"
+            android:text="@string/convert"
+            android:visibility="visible"
+            app:backgroundTint="#A517CC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="151dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="104dp"
+            android:ems="10"
+            android:hint="Enter Fahrenheit"
+            android:inputType="textPersonName"
+            android:textColorLink="@color/black"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="356dp"
+            android:background="#EEE6EF"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:src="@mipmap/ten"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="113dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
